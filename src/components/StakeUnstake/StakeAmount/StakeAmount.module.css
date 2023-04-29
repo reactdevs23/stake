@@ -1,0 +1,198 @@
+.stakeAmountContainer {
+  background: rgba(101, 93, 187, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.availableContainer {
+  padding-bottom: 4px;
+}
+.title {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(229, 222, 243, 0.8);
+}
+.text {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height */
+
+  color: rgba(229, 222, 243, 0.3);
+}
+
+.valueWrapper {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+  gap: 8px;
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 5px;
+  padding: 5px 10px;
+  padding-right: 5px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input {
+  font-family: var(--mainFont);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(229, 222, 243, 1);
+
+  width: 100%;
+  padding: 10px 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.hteContainer {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.image {
+  width: 30px;
+}
+.hte,
+.ubs {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hte {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #11172f;
+}
+.ubs {
+  background: rgba(151, 146, 209, 0.2);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.secondaryText {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: rgba(229, 222, 243, 0.6);
+}
+.amount {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(229, 222, 243, 0.3);
+}
+.value {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #655dbb;
+}
+.progressContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.progress {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: rgba(229, 222, 243, 0.6);
+  background: rgba(151, 146, 209, 0.2);
+  padding: 10px 6px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 520px) {
+  .stakeAmountContainer {
+    padding: 10px;
+  }
+
+  .input {
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .text,
+  .hte,
+  .value,
+  .amount,
+  .secondaryText,
+  .amount,
+  .value {
+    font-size: 12px;
+  }
+  .progress {
+    font-size: 14px;
+  }
+  .ubs {
+    padding: 5px 8px;
+  }
+  .stakeAmoutImage {
+    width: 18px;
+  }
+  .image {
+    width: 20px;
+  }
+  .hteContainer {
+    padding: 3px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .valueWrapper {
+    grid-template-columns: 1fr 65px;
+  }
+}

@@ -1,0 +1,145 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+
+  background: linear-gradient(
+    180deg,
+    rgba(101, 93, 187, 0.3) -20.4%,
+    rgba(73, 67, 138, 0.3) 111.62%
+  );
+
+  box-shadow: 0px 8px 20px rgba(38, 38, 71, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  padding: 15px 0;
+  padding-bottom: 8px;
+}
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-height: 765px;
+  overflow: auto;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 8px;
+  border: 1px solid rgba(151, 146, 209, 0.16);
+}
+.idAndKey {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.idContainer {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(151, 146, 209, 0.2);
+}
+.id {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: rgba(229, 222, 243, 0.6);
+}
+.text {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(229, 222, 243, 0.8);
+}
+.addressContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.address {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(229, 222, 243, 0.4);
+}
+.secondaryText {
+  color: rgba(229, 222, 243, 0.3);
+}
+.copy {
+  cursor: pointer;
+  width: 16px;
+}
+
+.grScrollbar {
+  scrollbar-width: thin;
+  padding-right: 5px;
+}
+
+/* Chrome, Edge, and Safari */
+.grScrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.grScrollbar::-webkit-scrollbar-track {
+  background: rgba(250, 250, 250, 0.2);
+}
+
+.grScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  border: none;
+}
+
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+  .address {
+    font-size: 12px;
+  }
+  .addressContainer {
+    margin-left: auto;
+  }
+  .header {
+    padding-bottom: 0;
+  }
+  .heading {
+    font-size: 14px;
+  }
+  .secondTitle {
+    display: none;
+  }
+  .detailsContainer {
+    max-height: 400px;
+  }
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
