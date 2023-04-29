@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container">
         {" "}
         <div className={styles.wrapper}>
-          <StakeLeaderBoard />
+          {/* <StakeLeaderBoard /> */}
           <StakeUnstake />
         </div>
       </div>
